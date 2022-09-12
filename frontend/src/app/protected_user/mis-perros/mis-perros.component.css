@@ -1,0 +1,87 @@
+
+.content{
+  position:fixed;
+  top:70px;
+  left:15%;
+  width: 85%;
+  /* border:solid red 1px; */
+  height: 100vh;
+
+}
+.ficha{
+  margin-left: 10px ;
+  width: 30%;
+  height: 40%;
+  border: solid black 2px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.ficha-text{
+  font-size: 25px;
+  padding: 10px;
+  height: 30%;
+  border-bottom: solid black 2px;
+  width: 100%;
+}
+.ficha-text p{
+  color: black;
+  font-size: 10px;
+}
+.ficha-img{
+  height: 70%;
+}
+.ficha-img img{
+  width: 80%;
+  padding: 20px;
+}
+.p{
+  width: 100%;
+  margin: auto;
+  /* padding: 20px; */
+
+}
+.p-lista{
+
+  width: 80%;
+  /* border: solid red 1px; */
+
+}
+h2{
+
+  font-size: 30px;
+  text-align: center;
+}
+
+.p-agregar{
+  /* margin-left: 20px; */
+  width: 20%;
+
+
+
+}
+.fichaPlus{
+  width: 150px;
+  top: 70px;
+  border: solid black 2px;
+  border-radius: 20px;
+  height: 150px;
+  position: absolute;
+
+}
+.ficha-textP{
+
+  border-bottom: solid black 2px;
+}
+.ficha-textP p{
+  font-size: 14px;
+  color: black;
+}
+.ficha-imgP img{
+    width: 100px;
+    height: 100px;
+
+}
+.exterior{
+  height: 100%;
+  background-image: url("../../../assets/images/bg-2.png");
+}

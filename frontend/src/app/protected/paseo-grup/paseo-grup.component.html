@@ -1,0 +1,93 @@
+<div class="fondo dis-flex flex-row">
+
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+
+  </div>
+
+  <div class="content overflow-auto">
+    <app-menu></app-menu>
+
+    <div class="dis-flex flex-col">
+      <div class="row-cols-1 m-4 ">
+
+        <div class="f1 h-auto p-2">
+          <b>PASEO GRUPAL</b>
+        </div>
+
+        <div class="dis-flex flex-row h-auto">
+          <div class="col text-center">
+            <img src="../../../assets/images/icons/dog-walker.png" width="80px" height="80px" alt="">
+          </div>
+          <div class="col text-center m-auto">
+            <p>Con esta opción de paseo tu puedes llevar máximo 8 perros y
+              puedes esperar hasta 5 minutos para completar el cupo.
+              Recuerda que tu colocas el valor del paseo y seleccionas a los
+              clientes que desees.
+          </div>
+          <div class="col text-center  m-auto  ">
+            <div class="tarifa m-auto">
+              <p class="m-auto">Tarifa Base <br>$5000 pesos</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dis-flex flex-row">
+          <div class="col-4 m-auto p-3 formulario">
+            <form action="" class="row w-75 m-auto">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label class="form-label">Origen:</label>
+                </div>
+                <div class="col-sm-7  text-center ">
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" > </a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-5">
+                  <label class="form-label">Destino:</label>
+                </div>
+                <div class="col-sm-7  text-center ">
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" > </a></li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-5">
+                  <label class="form-label">Precio:</label>
+                </div>
+                <div class="col-sm-7">
+                  <input type="text">
+                </div>
+              </div>
+              <hr>
+              <div class="col m-auto" >
+                <br>
+                <button class="btn btn-success" >Ofertar paseo</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-9 text-center f2">
+            <div class=" dis-flex flex-column justify-content-between ficha " *ngFor="let pe of perros | keyvalue" >
+              <div class=" m-auto text-capitalize text-center ficha-text"  >
+                <!-- <p>{{pe.value | json  }}</p> -->
+
+              </div>
+              <div class=" dis-flex justify-content-center m-auto ficha-img"  (click)="p()" >
+                <img src="../../../assets/images/avatar-perro.png"  alt="">
+              </div>
+
+            </div>
+            <br>
+            <button class="btn btn-success" >Iniciar paseo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

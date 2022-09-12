@@ -1,0 +1,113 @@
+<form class="login100-form">
+  <form class="login-form"
+  autocomplete="off"
+  [formGroup]="miFormulario"
+  (ngSubmit)="register()">
+
+  <span class="login100-form-title p-b-49">
+      REGISTRO DE PASEADOR
+  </span>
+  <div class="wrap-input100 m-b-23">
+    <span class="label-input100">Nombre</span>
+    <input class="input100"
+           type="text"
+           formControlName="name"
+           placeholder="Ingrese su nombre">
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100 m-b-23">
+      <span class="label-input100">Email</span>
+      <input class="input100"
+             type="email"
+             formControlName="email"
+             placeholder="Ingrese su email">
+      <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+      <span class="label-input100">Password</span>
+      <input class="input100"
+             type="password"
+             formControlName="password"
+             placeholder="Ingrese su contraseña">
+      <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+    <span class="label-input100">Foto</span>
+    <input class="input100"
+           type="file"
+           formControlName="photo">
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+    <span class="label-input100">Cédula</span>
+    <input class="input100"
+           type="text"
+           formControlName="identification"
+           placeholder="Ingrese su cédula">
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+    <span class="label-input100">Fecha de nacimiento</span>
+    <input class="input100"
+           type="date"
+           formControlName="birth_date"
+           value="2018-07-22">
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+    <span class="label-input100">Teléfono</span>
+    <input class="input100"
+           type="text"
+           formControlName="phone"
+           placeholder="Ingrese su teléfono"
+           pattern="[0-9]{7,10}">
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+    <span class="label-input100">Dirección</span>
+    <input class="input100"
+           type="text"
+           formControlName="address"
+           placeholder="Ingrese su dirección">
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="wrap-input100">
+    <span class="label-input100">Experiencia</span>
+    <textarea class="input100"
+           type="text"
+           formControlName="experience"
+           placeholder="Ingrese su experiencia"></textarea>
+    <span class="focus-input100"></span>
+  </div>
+
+  <div class="text-right p-t-8 p-b-31"></div>
+
+  <div class="container-login100-form-btn">
+      <div class="wrap-login100-form-btn">
+          <div class="login100-form-bgbtn"></div>
+          <button class="login100-form-btn"
+                  type="submit"
+                  [disabled]="miFormulario.invalid">
+              Registrar
+          </button>
+      </div>
+  </div>
+
+  <div class="flex-col-c p-t-60">
+      <span class="txt1 p-b-17">
+          ¿Ya tienes una cuenta?
+      </span>
+
+      <a routerLink="/auth/login" class="txt2">
+          Ingresa aquí
+      </a>
+  </div>
+</form>

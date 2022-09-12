@@ -1,0 +1,80 @@
+<div class="fondo dis-flex flex-row">
+
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="content">
+    <app-menu></app-menu>
+
+    <div class="ext row-cols-1 m-4 ">
+
+      <div class="f1 h-auto p-2">
+        <b>MI ESTADO</b>
+      </div>
+
+      <div class="dis-flex flex-row h-auto p-3">
+        <div class="col text-center f2">
+          <p>Inactivo</p>
+        </div>
+        <div class="col text-center">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="col text-center f3">
+          <p style="color:white">Activo</p>
+        </div>
+        <hr>
+      </div>
+
+      <div class="dis-flex flex-row h-75 servicio">
+        <div class="col-4 m-auto">
+          <div class="row w-75 m-auto formulario p-3">
+            <form (ngSubmit)="origen()">
+              <div class="row">
+                <div class="col-sm-12">
+                  <label class="form-label" >Origen:</label>
+                </div>
+                <div class="col-sm-12  text-center ">
+                  <select class="form-select-sm selector"   aria-label="Default select example" >
+                    <option selected>Selecciona </option>
+                    <option *ngFor="let m of marcadores ; let i=index " [ngStyle]="{'background-color': m.color }">Punto {{i+1}} </option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-12">
+                  <label class="form-label" >Destino:</label>
+                </div>
+                <div class="col-sm-12  text-center ">
+                  <select class="form-select-sm selector"   aria-label="Default select example" >
+                    <option selected>Selecciona </option>
+                    <option *ngFor="let m of marcadores ; let i=index " [ngStyle]="{'background-color': m.color }">Punto {{i+1}} </option>
+                  </select>
+                </div>
+              </div>
+              <div class="row" >
+                <button class="btn btn-success" [routerLink]="['/dashboard_walker/paseo_grupal']">Paseo grupal</button>
+              </div>
+            </form>
+          </div>
+          <div class="row w-75 m-auto">
+            <span class="txt1 p-b-5 text-center">
+              ¿Deseas realizar un paseo individual?
+            </span>
+            <a routerLink="/dashboard_walker/paseo_individual" class="txt2 text-center">
+              Ingresa aquí
+            </a>
+          </div>
+        </div>
+
+        <div class="col-9 text-center mapa">
+          <app-mapa-marcador></app-mapa-marcador>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

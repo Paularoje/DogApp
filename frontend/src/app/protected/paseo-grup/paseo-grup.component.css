@@ -1,0 +1,99 @@
+.content{
+  position:fixed;
+  top:60px;
+  left:15%;
+  width: 85%;
+  height: 100vh;
+  border:solid red 1px;
+  padding: 10px;
+
+}
+
+.ext{
+  height: 80vh;
+
+}
+.f1{
+  text-align: center;
+  font-size: 20px;
+}
+
+.f2{
+  border: solid black 1px;
+}
+
+
+.formulario{
+  width: 30%;
+  border: solid black 1px;
+}
+.ficha-img img{
+  width: 100%;
+  padding: 20px;
+}
+.p{
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+
+}
+.ficha{
+  margin-left: 10px ;
+  width: 30%;
+  height: 40%;
+  border: solid black 2px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+.ficha-text{
+  font-size: 25px;
+  padding: 10px;
+  height: 30%;
+  border-bottom: solid black 2px;
+  width: 100%;
+}
+.ficha-text p{
+  color: black;
+  font-size: 10px;
+}
+.ficha-img{
+  height: 70%;
+}
+.ficha-img img{
+  width: 80%;
+  padding: 20px;
+}
+.p{
+  width: 100%;
+  margin: auto;
+  /* padding: 20px; */
+
+}
+.p-lista{
+
+  width: 80%;
+  /* border: solid red 1px; */
+
+}
+h2{
+
+  font-size: 30px;
+  text-align: center;
+}
+.tarifa{
+  border-radius: 50px;
+  background-color: rgb(255, 239, 148);
+  width: 150px;
+  height: 75px;
+  padding-top: 10px;
+  text-align: center;
+  border: solid black 1px;
+}
+.tarifa p{
+  color: black;
+
+}
+.exterior{
+  background-image: url("../../../assets/images/bg-2.png");
+  height: 100%;
+}

@@ -1,0 +1,47 @@
+<div class="fondo dis-flex flex-row">
+
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+  </div>
+
+  <div class="content">
+    <app-menu></app-menu>
+
+    <div class="ext row-cols-1 m-4 ">
+
+      <div class="f1 h-auto p-2">
+        <b>PASEO INDIVIDUAL</b>
+      </div>
+
+      <div class="dis-flex flex-row h-auto">
+        <div class="col text-center">
+          <img src="../../../assets/images/icons/caminando-con-perro.png" width="80px" height="80px" alt="">
+        </div>
+        <div class="col text-center m-auto">
+          <p>Con esta opción de paseo tu puedes llevar máximo 8 perros y
+            puedes esperar hasta 5 minutos para completar el cupo.
+            Recuerda que tu colocas el valor del paseo y seleccionas a los
+            clientes que desees.
+        </div>
+        <div class="col text-center  m-auto  ">
+          <div class="tarifa m-auto">
+            <p class="m-auto">Tarifa Base <br>$5000 pesos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dis-flex flex-row f2">
+        <div class=" dis-flex flex-column justify-content-between ficha " *ngFor="let pe of perros | keyvalue" >
+          <div class=" m-auto text-capitalize text-center ficha-text"  >
+            <!-- <p>{{pe.value | json  }}</p> -->
+
+          </div>
+          <div class=" dis-flex justify-content-center m-auto ficha-img"  (click)="p()" >
+            <img src="../../../assets/images/avatar-perro.png"  alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

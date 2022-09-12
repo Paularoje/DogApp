@@ -1,0 +1,58 @@
+<div class="fondo dis-flex flex-row">
+
+  <div class="sidebar">
+    <app-sidebar></app-sidebar>
+
+  </div>
+
+  <div class="content " >
+    <app-menu  ></app-menu>
+
+
+    <div class="exterior row p overflow-auto">
+      <div class=" dis-flex flex-column  p-lista">
+        <div class="titulo m-t-10">
+          <h2>Lista Perros</h2>
+
+        </div>
+
+
+
+        <div class=" dis-flex flex-column justify-content-between ficha " *ngFor="let pe of perros | keyvalue" >
+          <div class=" m-auto text-capitalize text-center ficha-text"  >
+            <!-- <p>{{pe.value | json  }}</p> -->
+
+          </div>
+          <div class=" dis-flex justify-content-center m-auto ficha-img"  (click)="p()" >
+            <img src="../../../assets/images/avatar-perro.png"  alt="">
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class=" p-agregar d-flex justify-content-center align-items-start" [routerLink]="['../agregarPerro']" >
+        <div class="row dis-flex  fichaPlus ">
+          <div class="col text-capitalize text-center ficha-textP">
+            <p class="m-auto"><b>Agregar Perro</b></p>
+          </div>
+          <!-- <hr> -->
+          <div class="col dis-flex justify-content-center ficha-imgP ">
+            <img src="../../../assets/images/icons/plus.png" style="cursor:pointer" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+
+</div>
+
+

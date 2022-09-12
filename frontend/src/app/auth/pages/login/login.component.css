@@ -1,0 +1,21 @@
+.caja{
+  display: flex;
+  flex-direction: row;
+
+}
+.caja1{
+  width: 80%;
+
+
+}
+.img{
+  width: 80%;
+  margin: auto;
+  margin-left: 30px;
+
+
+}
+.img img{
+  /* height: 400px; */
+  width: 100%;
+}
